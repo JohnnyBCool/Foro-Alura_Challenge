@@ -1,0 +1,13 @@
+ALTER TABLE usuarios
+ADD CONSTRAINT fk_usuario_perfil
+FOREIGN KEY(perfiles)
+REFERENCES perfiles(id)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT;
+
+ALTER TABLE respuestas
+ADD CONSTRAINT fk_repuesta_solucion
+FOREIGN KEY(solucion)
+REFERENCES usuarios(id)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT;

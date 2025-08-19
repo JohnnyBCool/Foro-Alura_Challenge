@@ -1,0 +1,2 @@
+ALTER TABLE usuarios
+MODIFY COLUMN contrasena VARCHAR(150) NOT NULL

@@ -1,0 +1,2 @@
+ALTER TABLE usuarios
+CHANGE COLUMN correoElectronico login VARCHAR(255) NOT NULL UNIQUE;
